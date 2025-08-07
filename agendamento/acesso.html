@@ -10,43 +10,28 @@
 <body>
  <section class="cards">
     <div class="aluno">
-      <a href="aluno.html"> <img src="img/aluno.png" alt=""><p class="al2">ALUNO</p></a>
+      <a href="formularios/php/form_aluno.html"> <img src="img/aluno.png" alt=""><p class="al2">ALUNO</p></a>
     </div>
     <div class="prof">
-      <a href="prof.html"><img src="img/prof.png" alt=""><p class="prof2">PROFESSOR</p></a>
+      <a href="formularios/php/form_professoradmin.html"><img src="img/prof.png" alt=""><p class="prof2">PROFESSOR</p></a>
     </div>
     <div class="triagem">
-      <a href="triagem.html"><img src="img/triagem.png" alt=""><p class="tri2">TRIAGEM</p></a>
+      <a href="formularios/php/form_colaboradoradmin.html"><img src="img/triagem.png" alt=""><p class="tri2">TRIAGEM</p></a>
     </div>
- </section>
-  
-       
+ </section> 
 
-    <div class="form_cadastro">
-        <h1 class="cad1">Cadastre-se</h1>
-        <form action="/enviar" method="post">
-
-            <label for="atividade">Cadastro para:</label>
-            <select name="atividade" id="atividade">
-                <option value="//">Professor</option>
-                <option value="//">Aluno</option>
-                <option value="//">Funcionario</option>
-            </select>
-            <br>
-            <label for="nome">Nome:</label>
-            <input type="text">
-            <br>
-            <label for="matricula">Matricula</label>
-            <input type="number">
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="senha">Senha</label>
-            <input type="password">
-            <br>    
-            <input type="submit" value="Enviar">
-        </form>
+    <div class="form_login">
+        <h1 class="cad1">Faça seu Login</h1>
+        <form action="cadastrar_login.php" method="post">
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        
+        <input type="submit" value="Cadastrar">
+    </form>
     </div>
 
 </body>
